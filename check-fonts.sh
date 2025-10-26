@@ -1,3 +1,5 @@
+#!/bin/bash
+
 check_pdf_fonts() {
     local pdf_file="$1"
     if [ ! -f "$pdf_file" ]; then
@@ -34,3 +36,5 @@ check_pdf_fonts() {
     fi
     return $result
 }
+
+check_pdf_fonts $1
